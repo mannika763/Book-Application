@@ -1,0 +1,72 @@
+<div class="row wow fadeIn justify-content-center">
+<div class="col-10 border ">
+<mat-card>
+  <mat-card-content>
+    <div class="signup-header">
+      <h1 class="mb-5 mt-5 text-center text-fat">Create Your Account</h1>
+
+    </div>
+    <form name="SignUpForm" [formGroup]="SignUpForm" (ngSubmit)="signup()" >
+      <div class="nameInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Full Name</mat-label>
+          <input formControlName="name" matInput class="custom-input" placeholder="Enter Your Full Name" required />
+        </mat-form-field>
+      </div>
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="Enter email address" required
+          />
+          <mat-error *ngIf="!SignUpForm.controls['email'].valid">
+              Email is required
+            </mat-error>
+
+        </mat-form-field>
+      </div>
+      <div class="passwordInput">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+        formControlName="password"
+        matInput
+        placeholder="***********************"
+         required
+        autocomplete="off"
+      />
+        <button title="btn" type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+        [attr.aria-pressed]="hide">
+        <!-- <mat-icon>
+            {{hide ? 'visibility_off' : 'visibility'}}
+        </mat-icon> -->
+    </button>
+   <mat-error *ngIf="!SignUpForm.controls['password'].valid">
+        Password alteast 7 character long
+      </mat-error>
+      </mat-form-field>
+    </div>
+        <div>
+
+      </div>
+      <button
+      color="accent"
+      [disabled]="!SignUpForm.valid"
+      mat-raised-button
+      type="submit"
+
+    >
+      <span>Sign up</span>
+    </button>
+     </form>
+
+    <div class="button-row">
+      <a >Already Registered!</a>
+      <a routerLink="login">Login</a>
+    </div>
+  </mat-card-content>
+</mat-card>
+</div>
+</div>

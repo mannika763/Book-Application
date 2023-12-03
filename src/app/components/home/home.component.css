@@ -1,0 +1,37 @@
+mat-card {
+  max-width: 600px;
+  margin:  auto;
+  text-align: center;
+  max-height: 600px;
+  background-color: white;
+}
+.signup-header{
+  text-align: center;
+
+}
+.full-width {
+  width: 80%;
+  height: 4rem;
+}
+
+.custom-input{
+  margin: auto;
+}
+mat-error{
+  color: red;
+}
+
+
+
+.emailInput, .nameInput, .passwordInput{
+  padding-top: 10px
+
+}
+.contentBody {
+  padding: 10px 1rem;
+  background :#1b6ca8;
+  display: block;
+}
+.button-row {
+  margin-top: 10px;
+}

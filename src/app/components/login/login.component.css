@@ -1,0 +1,49 @@
+mat-card {
+  max-width: 600px;
+  margin:  auto;
+  text-align: center;
+  max-height: 700px;
+  background-color: white;
+}
+.signup-header{
+  text-align: center;
+
+}
+.full-width {
+  margin: auto;
+  width: 80%;
+  height: 4rem;
+}
+
+.custom-input{
+  margin: auto;
+}
+mat-error{
+  color: red;
+}
+.ani {
+  
+
+ bottom: 0.5%;
+  background-image: url("./books.jpg");
+  background-size: cover;
+  opacity: 0.2;
+height: 100%;
+width: 100%;
+
+}
+
+
+
+.emailInput,  .passwordInput{
+  padding-top: 10px
+
+}
+.contentBody {
+  padding: 10px 1rem;
+  background :#1b6ca8;
+  display: block;
+}
+.button-row {
+  margin-top: 10px;
+}

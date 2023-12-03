@@ -1,0 +1,135 @@
+<!--
+<mat-card>
+  <mat-card-content>
+    <div class="signup-header">
+      <p>Login Here</p>
+    </div>
+    <form name="SignUpForm" [formGroup]="LoginForm" (ngSubmit)="login()" >
+      <div class="emailInput">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input
+            formControlName="email"
+            matInput
+            placeholder="Enter email address" required
+          />
+          <mat-error *ngIf="!LoginForm.controls['email'].valid">
+              Email is required
+            </mat-error>
+
+        </mat-form-field>
+      </div>
+      <div class="passwordInput">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input
+        formControlName="password"
+        matInput
+        placeholder="***********************"
+         required
+        autocomplete="off"
+      />
+        <button title="btn" type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+        [attr.aria-pressed]="hide">
+        <!-- <mat-icon>
+            {{hide ? 'visibility_off' : 'visibility'}}
+        </mat-icon> -->
+    <!-- </button>
+   <mat-error *ngIf="!LoginForm.controls['password'].valid">
+        Password alteast 7 character long
+      </mat-error>
+      </mat-form-field>
+    </div>
+        <div>
+
+      </div>
+      <button
+      color="accent"
+      [disabled]="!LoginForm.valid"
+      mat-raised-button
+      type="submit"
+
+    >
+      <span>Login</span>
+    </button>
+     </form>
+
+    <div class="button-row">
+      <a>Can't Login! Sign Up</a>
+    </div>
+  </mat-card-content>
+</mat-card> -->
+
+
+<div class="section get-book" id="get-ebook">
+  <div class="container">
+    <div class="row wow fadeIn justify-content-center">
+      <div class="col-10 border ">
+        <form class="get-book-form">
+          <h1 class="mb-5 mt-5 text-center text-fat">Login Here</h1>
+
+          <div class="email text-center">
+            <div class="button text-center form-wrapper">
+              <div class="get-book-form-wrapper">
+                <form name="SignUpForm" [formGroup]="LoginForm" (ngSubmit)="login()" novalidate>
+                  <div class="emailInput">
+                    <mat-form-field class="full-width" appearance="outline">
+                      <mat-label>Email</mat-label>
+                      <input
+                        formControlName="email"
+                        matInput
+                        placeholder="Enter email address" required
+                      />
+                      <mat-error *ngIf="!LoginForm.controls['email'].valid">
+                          Email is required
+                        </mat-error>
+
+                    </mat-form-field>
+                  </div>
+                  <div class="passwordInput">
+                  <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input
+                    formControlName="password"
+                    matInput
+                    placeholder="***********************"
+                     required
+                    autocomplete="off"
+                  />
+                    <button title="btn" type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+                    [attr.aria-pressed]="hide">
+                    <!-- <mat-icon>
+                        {{hide ? 'visibility_off' : 'visibility'}}
+                    </mat-icon> -->
+                </button>
+               <mat-error *ngIf="!LoginForm.controls['password'].valid">
+                    Password alteast 7 character long
+                  </mat-error>
+                  </mat-form-field>
+                </div>
+                    <div>
+
+                  </div>
+                  <button
+                  color="accent"
+                  [disabled]="!LoginForm.valid"
+                  mat-raised-button
+                  type="submit"
+
+                >
+                  <span>Login</span>
+                </button>
+               
+                 </form>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ani">
+
+</div>

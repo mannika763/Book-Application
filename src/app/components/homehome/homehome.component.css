@@ -1,0 +1,25 @@
+
+.section.static-site-heading{
+border: 2px black;
+ background-image: url("./images/book backg.jpeg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 117% 100%;
+ background-position:left;
+    position: relative;
+    padding: 20vh 0 30vh;
+    margin-top: -87px;
+}
+.section.static-site-heading.ebook .rocket {
+
+  position: absolute;
+  /* z-index: 1; */
+  top: 7%;
+  background-image: url("./images/Animation - 1699711980636.gif");
+
+  background-size: 100% 100%;
+  right: 8%;
+  width: 300px;
+  height: 230px;
+}
+

@@ -1,0 +1,33 @@
+<div class="section big-padding static-site-heading ebook" >
+  <!-- <img src= '${require("./images/book backg.jpeg")}' title="dd"> -->
+  <div class="rocket">
+    <!-- <ng-lottie [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie> -->
+    <!-- <img src='${require("./images/Animation - 1699711980636.gif")}' alt="Computer man"> -->
+  </div>
+  <div class="container">
+    <div class="row wow fadeIn">
+      <div class="col-12">
+        <h1 class="text-center text-fat no-nothing-top-bottom ">
+          The Job Seeker’s
+          <br>
+          Guide to the Galaxy
+        </h1>
+      </div>
+      <div class="col-12 col-md-6 offset-md-3" >
+        <h3 class="text-center " *ngIf="loggedIn">
+          <br>
+          <h1>Welcome, {{ userName }}!</h1>
+        </h3>
+        <div class="button text-center mt-20">
+          <br>
+          <a *ngIf="!loggedIn" href="" data-target="#get-ebook" id="get-the-book-button" class="btn btn-primary btn-lg" routerLink="login">
+           Login
+          </a>
+          <a *ngIf="loggedIn" href="" data-target="#get-ebook" id="logout-button" class="btn btn-danger btn-lg" (click)="logout()">
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

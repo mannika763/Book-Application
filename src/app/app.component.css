@@ -1,0 +1,16 @@
+.content-body{
+min-height: 100%;
+padding: 60px 1rem;
+/* background: #16bca8; */
+display: block;
+}
+
+*{
+  font-family: "Graphik Web",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3f3f3f;
+    text-align: left;
+    background-color: #fff;
+}
